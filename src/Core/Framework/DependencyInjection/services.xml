@@ -513,5 +513,10 @@ base-uri 'self';
             <tag name="console.command"/>
             <tag name="console.command" command="administration:dump:features"/>
         </service>
+
+        <!-- system info -->
+        <service id="Shopware\Core\System\SystemInfo\Api\SystemInfoController" public="true">
+            <argument type="string">%kernel.project_dir%</argument>
+        </service>
     </services>
 </container>
